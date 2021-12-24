@@ -1,0 +1,33 @@
+{
+  "name": "schoolapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo eva va bien",
+    "build": "webpack",
+    "start": "webpack serve",
+    "dev": "webpack --mode development",
+    "watch": "webpack --mode development --watch",
+    "serve": "live-server --entry-file=./index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvaDiop10/schoolApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvaDiop10/schoolApp/issues"
+  },
+  "homepage": "https://github.com/EvaDiop10/schoolApp#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "babel-loader": "^8.2.3",
+    "babel-polyfill": "^6.26.0",
+    "live-server": "^1.2.1",
+    "webpack-dev-server": "^4.7.1",
+    "webpack-serve": "^4.0.0"
+  }
+}
