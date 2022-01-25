@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <title>School_Application</title>
+    
 </head>
 <body>
     <h1 class="text-center p-4 shadow">SchoolAPP :-)</h1>
@@ -18,14 +19,14 @@
                 <form action="" class="formulaire">
                     <div class="row">
                         <div class="col ">
-                            <input type="text" id="nom" class="name form-control" placeholder="Nom" aria-label="First name">
+                            <input required type="text" id="nom" class="name form-control" placeholder="Nom" aria-label="First name">
                         </div>
                         <div class="col">
-                            <input type="text" id="prenom" class="prenom form-control" placeholder="Prénom" aria-label="Last name">
+                            <input required type="text" id="prenom" class="prenom form-control" placeholder="Prénom" aria-label="Last name">
                         </div>
                     </div>
                     <div class="mt-4">Niveau
-                        <select name="niveau" id="selected" class="form-control mt-2">
+                        <select required name="niveau" id="selected" class="form-control mt-2">
                             <option selected value="">--</option>
                             <option value="Debutant">Debutant</option>
                             <option value="Intermediaire">Intermediaire</option>
@@ -36,11 +37,11 @@
                     <div>
                         <label for="">Bio</label>
                     </div>
-                        <textarea name="" id="biographie" cols="30" rows="10" class="biographie form-control mt-2"></textarea>
+                        <textarea required name="" id="biographie" cols="30" rows="10" class="biographie form-control mt-2"></textarea>
                     </div>
                     <div>
                         <p class="text-end fw-bold mt-3">
-                            <span>0</span>/130
+                            <span class="">0</span>/130
                         </p>
                     </div>
                     <input type="submit" class="btnAdd btn btn-danger btn-lg rounded-pill  mt-3 fw-bold" value="Ajouter">
@@ -48,14 +49,19 @@
             </div>
             <div class="col-6 bg-danger mt-3 scrollspy-example" >
                 <h2 class="text-center text-white">Apprenants</h2>
-                <ul>
+                <ul style="overflow-y:scroll; height:500px;">
                     
                 </ul>
-                <div class="d-flex float-end m-auto">
+                <div class="d-flex float-end m-auto p-4" >
                     <button type="button" id="sauvegarder" class="btn btn-light text-danger btn-lg mt-3 rounded-pill fw-bold">Sauvegarder</button>
                 </div>
             </div>
         </div>
+        <button id="listeApp" class="btn btn-danger text-white btn-lg mt-3 rounded-pill fw-bold">Liste des Apprenants</button>
+    </section>
+    <!-- competences -->
+    <section>
+        
     </section>
     <script src="dist/app.bundle.js"></script>
 </body>
