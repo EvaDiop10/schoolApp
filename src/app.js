@@ -97,6 +97,7 @@ document.querySelector('.btnAdd').addEventListener("submit",(event)=>{
         headers: {
             "Content-Type": "application/json",
             apiKey: SUPABASE_KEY,
+        // Prefer: "return=representation",
         },
     })
     // .then((response) => response.json())
